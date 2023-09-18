@@ -1,53 +1,59 @@
 import re
 
+dictionnary = {
+    "lowercase" : "caractères minuscule",
+    "uppercase" : "caractères majuscule",
+    "characters" : "caractères",
+    "specialCharacters" : "caractères spéciaux", 
+    "number" : "nombres"
+}
+
 def callFunctions(_type, nbr, string):
     count = _type(string)
-    print("count ->", count, "nbr ->", nbr, string)
-
     if (count >= nbr) :
-        print("valid password")
+        print("Valid password !")
     else :
-        print("invalid password")
+        print(f"Il manque {nbr - count} {dictionnary[_type.__name__]}")
 
 
 def lowercase(string) :
     count = 0
+
     for i in range(len(string)) :
         if re.search('[a-z]', string[i]):
             count += 1
-    print(count)
     return count
+
 
 def uppercase(string) :
     count = 0
     for i in range(len(string)) :
         if re.search('[A-Z]', string[i]):
             count += 1
-    print(count)
     return count
+
 
 def characters(string) :
     count = 0
     for i in range(len(string)) :
         if re.search('[a-zA-Z]', string[i]):
             count += 1
-    print(count)
     return count
+
 
 def specialCharacters(string) :
     count = 0
     for i in range(len(string)) :
         if re.search('[^a-zA-Z0-9]', string[i]):
             count += 1
-    print(count)
     return count
+
 
 def number(string) :
     count = 0
     for i in range(len(string)) :
         if re.search('[0-9]', string[i]):
             count += 1
-    print(count)
     return count
 
-callFunctions(number, 4, "a1231c")
+callFunctions(lowercase, 4, "a12")
