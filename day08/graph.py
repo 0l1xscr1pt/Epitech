@@ -1,6 +1,8 @@
 import numpy as np
 import matplotlib.pyplot as matplot
 
+matplot.rc('axes', axisbelow=True)
+
 def graph(x, y) :
     matplot.scatter(x, y, c='red')
     matplot.grid()
