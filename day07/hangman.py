@@ -15,9 +15,9 @@ def testGoodCompletWord(string, wordToTest, points) :
 
 def testNotGoodCompletWord(string, wordToTest, _hangman, points) :
     if (points <= 1) :
-        print(f"{wordToTest.upper()} : incorrect guess \n{' '.join(_hangman)} \n {points} point")
+        print(f"{wordToTest.upper()} : incorrect guess \n{' '.join(_hangman)} \n - {points} point")
     else :
-        print(f"{wordToTest.upper()} : incorrect guess \n{' '.join(_hangman)} \n {points} points")
+        print(f"{wordToTest.upper()} : incorrect guess \n{' '.join(_hangman)} \n - {points} points")
     return 0
 
 
@@ -32,9 +32,9 @@ def goodLetter(string, wordToTest, _hangman, points) :
 def notGoodLetter(string, wordToTest, _hangman, points) :
     print(f'No ‘{wordToTest}’ found')
     if points <= 1 :
-        print(f"{' '.join(_hangman)} / {points} point")
+        print(f"{' '.join(_hangman)} / - {points} point")
     else :
-        print(f"{' '.join(_hangman)} / {points} points")
+        print(f"{' '.join(_hangman)} / - {points} points")
     return 0
 
 
