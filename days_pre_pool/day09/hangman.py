@@ -1,11 +1,49 @@
 import random
 import sys
 
-_file = open(sys.argv[1])
-lines = _file.read().splitlines()
-myWord = random.choice(lines)
+#only one word unexpected file format
+
+# print(len(sys.argv))
+
+# if len(sys.argv) > 2 :
+#     print("number of arguments superior to 1")
+#     # return "number of arguments superior to 1"
+
+# elif len(sys.argv) == 1:
+#     print("missing argument")
+#     # return "missing argument"
+
+
+
+
+
+
+# _file = open(sys.argv[1])
+# lines = _file.read().splitlines()
+# myWord = random.choice(lines)
 # print(myWord)
-_file.close()
+# _file.close()
+
+
+
+
+
+
+
+
+#if nbr of arguments == 2 execute openfile and hangman
+# if len(sys.argv) > 2 :
+    # _file = open(sys.argv[1])
+    # lines = _file.read().splitlines()
+    # myWord = random.choice(lines)
+    # # print(myWord)
+    # _file.close()
+
+# else :
+#     print("problem")
+#     return 1
+
+
 
 
 def nbr_of_underscore(string) :
@@ -25,9 +63,9 @@ def testGoodCompletWord(string, wordToTest, points) :
 
 def testNotGoodCompletWord(string, wordToTest, _hangman, points) :
     if (points <= 1) :
-        print(f"{wordToTest.upper()} : incorrect guess \n{' '.join(_hangman)} \n {points} point")
+        print(f"{wordToTest.upper()} : incorrect guess \n{' '.join(_hangman)} \n - {points} point")
     else :
-        print(f"{wordToTest.upper()} : incorrect guess \n{' '.join(_hangman)} \n {points} points")
+        print(f"{wordToTest.upper()} : incorrect guess \n{' '.join(_hangman)} \n - {points} points")
     return 0
 
 
@@ -42,9 +80,9 @@ def goodLetter(string, wordToTest, _hangman, points) :
 def notGoodLetter(string, wordToTest, _hangman, points) :
     print(f'No ‘{wordToTest}’ found')
     if points <= 1 :
-        print(f"{' '.join(_hangman)} / {points} point")
+        print(f"{' '.join(_hangman)} / - {points} point")
     else :
-        print(f"{' '.join(_hangman)} / {points} points")
+        print(f"{' '.join(_hangman)} / - {points} points")
     return 0
 
 
@@ -86,5 +124,5 @@ def hangman(string) :
                     notGoodLetter(string, wordToTest, _hangman, points)
         return 0
 
-                
-hangman(myWord)
+        
+#hangman(myWord)

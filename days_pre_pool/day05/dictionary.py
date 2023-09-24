@@ -1,9 +1,32 @@
 def sum(javaCredit, networkCredit, webCredit) :
-    sumResult = javaCredit + networkCredit + webCredit
-    print(sumResult)
+    creditSum = javaCredit + networkCredit + webCredit
+    print(creditSum)
     return 0
 
 def gpa(javaGrad, networkGrad, webGrad) :
+    #      {
+
+    #     'name': 'Alain',
+
+    #     'academic_year': '1',
+
+    #     'units': [
+
+    #         {'name': 'Web Development', 'credits': 10, 'grade': 'A'},
+
+    #         {'name': 'Network and System Administration', 'credits': 10,'grade': 'A'},
+
+    #         {'name': 'Java', 'credits': 10, 'grade': 'A'}
+
+    #     ]
+
+    # }
+    #gpa = ('A' * 10 + 'A' * 10 + 'A' * 10) / total credit
+    # (((A vaut 4))) 
+    #gpa vaudra 4
+    creditSum = sum(javaCredit, networkCredit, webCredit)
+    gpa = (JavaCredits * javaGrad + networkCredits * networkGrad + webCredits * webGrad) / creditSum
+
     print(javaGrad, networkGrad, webGrad)
     return 0
 
@@ -27,18 +50,16 @@ def createDictionnary(java, network, web) :
         'E' : 0
     }
 
-    totalCredit = result(student['units'][0]['credits'], student['units'][1]['credits'], student['units'][2]['credits'])
+    theSum = sum(student['units'][0]['credits'], student['units'][1]['credits'], student['units'][2]['credits'])
+    theGpa = gpa(student['units'][0]['grade'], student['units'][1]['grade'], student['units'][2]['grade'])
+
+    print(theSum, theGpa)
+
 
     # print(student['units'][0]['credits'], student['units'][0]['grade'])
     return 0
 
 createDictionnary((10, 'A'), (10, 'A'), (10, 'B'))
-
-
-
-    # student['gpa'] = sum(grade_weight_mapping[unit['grade']] * unit['credits'] for unit in student['units']) // student['total_credits']
-
-
 
 
 
