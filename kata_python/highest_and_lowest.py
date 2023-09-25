@@ -7,7 +7,7 @@ def highAndLow(listString) :
         if not listString[i] == " ":
             _list += listString[i]
         if listString[i] == "-" :
-            _list += listString[i] + "yuy" + listString[i + 1]
+            _list += listString[i] + listString[i + 1]
             i += 1
         i += 1
 
