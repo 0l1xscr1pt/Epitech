@@ -1,0 +1,41 @@
+header,
+footer {
+    min-height: 30px;
+}
+
+section,
+article {
+    min-height: 65px;
+}
+
+@media screen and (max-width: 767px) {
+    header {
+        margin-bottom: 5px;
+        background-color: rgb(132, 232, 255);
+    }
+
+    section:first-child {
+        margin-bottom: 5px;
+        background-color: rgb(132, 255, 134);
+    }
+
+    article {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    article {
+        margin-bottom: 5px;
+        background-color: rgb(251, 255, 132);
+    }
+
+    #display_row:nth-child(2),
+    #display_row:nth-child(3) {
+        display: none;
+    }
+
+    footer {
+        background-color: rgb(255, 132, 132);
+    }
+}

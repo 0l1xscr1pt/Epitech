@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>CodingPedia</title>
+    </head>
+    <body>
+        <header>
+            <h1>Welcome to CodingPedia!</h1>
+            <nav>
+                <ol>
+                    <li><a href="index.html">Index</a></li>
+                    <li><a href="php.html">PHP</a></li>
+                    <li><a href="sql.html">SQL</a></li>
+                </ol>
+            </nav>
+        </header>
+        <main>
+            <p>
+                CodingPedia is a collective encyclopedia project on the Internet aiming to 
+                be universal and multi-lingual which functions as a wiki.</br>
+                CodingPedia has for goal to offer freely reusable objective and verifiable 
+                content that anyone can modify and improve.
+            </p>
+            <article>
+                <form method="get" action="">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" required></br>
+
+                    <label for="first_name">First name</label>
+                    <input type="text" name="first_name" required></br>
+
+                    <label for="email">Mail</label>
+                    <input type="email" name="email" required></br>
+
+                    <label for="age">Age</label>
+                    <input type="number" name="age" min="3" max="99"></br>
+
+                    <label for="phone">Phone</label>
+                    <input type="tel" name="phone" pattern="[0-9]{10}"></br>
+
+                    <label for="sex"></label>
+                    <input type="radio" name="sex" id="male" value="male" autocomplete="off" checked>male
+                    <input type="radio" name="sex" id="female" value="female" autocomplete="off">female
+
+                    <label for="hair_color">Hair color</label>
+                    <input type="color" name="hair_color"></br></br>
+
+                    <label for="date">Date</label>
+                    <input type="date" name="date"></br>
+
+                    <label for="technology_list">Technology</label>
+                    <select name="technology_list" id="technology_list">
+                        <option value="php">PHP</option>
+                        <option value="sql">SQL</option>
+                    </select></br>
+
+                    <label for="question">Question</label>
+                    <input type="textarea" name="question" required>
+                    
+                    <input type="submit" value="Submit"></input>
+                </form>
+            </article>
+        </main>
+        <aside>
+            <p>
+                I'm the developper of the website.
+            </p>
+            <blockquote>
+                Peace is a lie, there is only passion.</br>
+                Through passion, I gain strength.</br>
+                Through strength, I gain power.</br>
+                Through power, I gain victory.</br>
+                Through victory, my chains are broken.</br>
+                The Force shall free me.
+                <strong><cite>— Sith Code —</cite></strong>
+            </blockquote>
+        </aside>
+        <footer>
+            <address>Dalibard - Lya - Lyon - 000 000 00 00</address>
+        </footer>
+    </body>
+</html>

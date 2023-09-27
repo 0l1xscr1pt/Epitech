@@ -1,0 +1,135 @@
+header,
+footer {
+    min-height: 30px;
+}
+
+section,
+article {
+    min-height: 65px;
+}
+
+@media screen and (max-width: 767px) {
+    header {
+        margin-bottom: 5px;
+        background-color: rgb(132, 232, 255);
+    }
+
+    section:first-child {
+        margin-bottom: 5px;
+        background-color: rgb(132, 255, 134);
+    }
+
+    article {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    article {
+        margin-bottom: 5px;
+        background-color: rgb(251, 255, 132);
+    }
+
+    #display_row:nth-child(2),
+    #display_row:nth-child(3) {
+        display: none;
+    }
+
+    footer {
+        background-color: rgb(255, 132, 132);
+    }
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    header {
+        width: 49%;
+        margin-bottom: 5px;
+        background-color: rgb(132, 232, 255);
+    }
+
+    section:first-child {
+        margin-bottom: 5px;
+        background-color: rgb(132, 255, 134);
+    }
+
+    section {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    article {
+        width: 49%;
+        margin-bottom: 10px;
+    }
+
+    article:first-child,
+    article:nth-child(2) {
+        background-color: rgb(251, 255, 132);
+    }
+
+
+    article:nth-child(3),
+    article:nth-child(4) {
+        background-color: rgb(187, 132, 255);
+    }
+
+
+    article:nth-last-child(-n + 2) {
+        display: none;
+    }
+
+    footer {
+        background-color: rgb(255, 91, 91);
+    }
+}
+
+
+
+@media screen and (min-width: 1024px) {
+    header {
+        width: 32%;
+        margin-bottom: 5px;
+        background-color: rgb(132, 232, 255);
+    }
+
+    section:first-child {
+        margin-bottom: 15px;
+        background-color: rgb(132, 255, 134);
+    }
+
+    section {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    article {
+        width: 32%;
+        margin-bottom: 10px;
+    }
+
+    article:first-child,
+    article:nth-child(2) {
+        background-color: rgb(251, 255, 132);
+    }
+
+
+    article:nth-child(3),
+    article:nth-child(4) {
+        background-color: rgb(187, 132, 255);
+    }
+
+
+    article:nth-last-child(-n + 2) {
+        background-color: rgb(255, 129, 177);
+    }
+
+    footer {
+        background-color: rgb(255, 91, 91);
+    }
+}
