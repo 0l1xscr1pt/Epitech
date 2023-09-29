@@ -1,0 +1,213 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Nunito', Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.container-left {
+    flex: 30% 0;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: rgb(15, 9, 47);
+    padding: 1vh 1vh 0 1vh;
+    cursor: url('white_paw.png'), auto;
+}
+
+.box-left {
+    margin-bottom: 1vh;
+}
+
+.box-left-two,
+.box-left-three,
+.box-one:last-child {
+    margin-bottom: 3vh;
+}
+
+.my_picture {
+    height: 25vh;
+    border-radius: 58% 42% 54% 46% / 48% 63% 37% 52% ;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-decoration-color: rgb(150, 215, 255);
+    text-decoration-thickness: 3px;
+}
+
+.container-left a:hover {
+    cursor: url('white_paw.png'), auto;
+}
+
+.container-right a:hover {
+    cursor: url('black_paw.png'), auto;
+}
+
+.container-left a {
+    color: white;
+}
+
+.box-one {
+    display: flex;
+}
+
+.box-one:not(:last-child) {
+    margin-bottom: 0.8vh;
+}
+
+.mini-icon {
+    margin-right: 1vh;
+}
+
+.jauge-complet, 
+.jauge-two-empty {
+    height: 0.5em;
+    width: 8em;
+}
+
+.jauge-complet {
+    border-radius: 1em;
+    background-color: #bb00ff;
+}
+
+.jauge-one {
+    width: 8em;
+    border-radius: 1em;
+    background-color: #fdfeff;
+    z-index: 1;
+    margin-left: 0.3em;
+}
+
+.jauge-two-empty {
+    width: 5em;
+    border-radius: 1em;
+    background-color: #bb00ff;
+    z-index: 2;
+} 
+
+.box-three {
+    display: flex;
+    align-items: center;
+}
+
+.box-three li {
+    margin-right: 1em;
+}
+
+.box-right-one,
+.box-right-two,
+.box-right-three,
+.box-right-four {
+    margin-bottom: 2.5em;
+}
+
+.title-and-logo,
+.title-and-date {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title-and-logo img {
+    margin-top: 0.7em;
+}
+
+h1 {
+    font-size: 1.7em;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-right: 1em;
+}
+
+h3 {
+    font-size: 1.4em;
+}
+
+.epitech-logo {
+    height: 3em;
+}
+
+.box-right-two {
+    display: flex;
+}
+
+.competences {
+    display: flex;
+    flex-direction: column;
+}
+
+.competences li {
+    font-size: 0.5em;
+    font-weight: bold;
+}
+
+.competences:not(:last-child) {
+    margin-right: 5%;
+}
+
+.programme_icon {
+    width: 80%;
+}
+
+.container-right {
+    flex: 70% 0;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 1vh 0 1vh;
+    cursor: url('black_paw.png'), auto;
+}
+
+img {
+    height: 3.5vh;
+}
+
+.container-right a {
+    color: rgb(15, 9, 47);
+}
+
+.box-right {
+    flex: 35% 0;
+}
+
+.line {
+    height: 0.3vh;
+    background-color: rgb(15, 9, 47);
+}
+
+.box-right-two {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.competences-bloc {
+    margin-right: 2em;
+}
+
+.box-right-three {
+    margin-right: 1em;
+}
+
+.box-right-three .title-and-date,
+.box-right-four .title-and-date {
+    margin-top: 0.5em;
+}
