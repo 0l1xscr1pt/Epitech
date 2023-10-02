@@ -5,6 +5,5 @@ export function arrayFiltering(array, validation) {
             newArray.push(array[i]);
         }
     }
-    console.log(newArray);
     return newArray;
 }
